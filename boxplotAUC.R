@@ -1,6 +1,5 @@
 ##########################################################################################################################
-# Function LongCatMixedEffectPlot: makes a plot of the mean of multiple groups when time is categorical
-# Author: koen.vanbrabant@kuleuven.be
+# Function; boxplotAUC - boxplot function with AUC, CI, and p-value
 # date: 3/12/2016
 ###########################################################################################################################
 # dependencies
