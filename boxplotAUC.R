@@ -23,7 +23,8 @@ boxplotAUC = function(cat=c(),con=c(),data=c(),conf.level = .95){
                     x = ifelse(label(data[,cat])=='',cat,label(data[,cat])))
   
   data =  data.frame(con=as.numeric(data[,con]),cat=data[,cat])
-    ggplot(data=data) + geom_boxplot(aes(cat,con)) + geom_text(aes(label=text,y=max,x=1.5),size=5) + labs(labels_list)
+    ggplot(data=data) + geom_boxplot(aes(cat,con)) + geom_text(aes(label=text,y=(max*1.1),x=1.5),size=5) + labs(labels_list) + theme(axis.title.x=element_blank())
+      
 }
 
 
@@ -38,3 +39,7 @@ boxplotAUC = function(cat=c(),con=c(),data=c(),conf.level = .95){
 # 
 # # use function
 # boxplotAUC(con = 'cont.var', cat = 'cat.var', data=random.Data) 
+
+
+boxplotAUC(cat=c('condition.cat'),con = c('verblijfsduur_Min'),data=tonsil_work)
+
