@@ -41,5 +41,3 @@ boxplotAUC = function(cat=c(),con=c(),data=c(),conf.level = .95){
 # boxplotAUC(con = 'cont.var', cat = 'cat.var', data=random.Data) 
 
 
-boxplotAUC(cat=c('condition.cat'),con = c('verblijfsduur_Min'),data=tonsil_work)
-
